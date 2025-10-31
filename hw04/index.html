@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="zh-Hant-TW">
 <head>
@@ -153,8 +154,7 @@
   <!-- ------------------------------------------------>
   <div class="row hw12">
     <div class="col-md-12 twenty">
-      心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。
-    </div>
+      本次作業讓我深入掌握醫學影像處理流程。從電腦斷層切片轉為 PNG 圖片，再透過資料擴充（Data Augmentation）提升模型訓練的多樣性，有效增加泛化能力。實作中，我熟悉了 Labelme 影像標註的關鍵流程與技巧，深刻體會到精確標註資料在深度學習應用中的基礎性和重要性。整體而言，這是一次寶貴的實戰經驗，讓我對醫學影像的處理與應用有了更全面且深入的認識。    </div>
   </div>
 
   <!-- ------------------------------------------------>
@@ -169,22 +169,28 @@
         </tr>
         <tr>
           <td rowspan="4" id="myTotal"></td>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox1"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox1" checked></td>
           <td id='m1'>4</td>
-          <td>Simple baseline - 描述</td>
+          <td>Simple baseline - 將06_ct.nii.gz 透過3D Slicer 還原成233切的 .dcm檔，將含有主動脈瓣的 .dcm壓縮成 dcm.zip 透過 Colab 轉成 .png檔。<br>
+                                使用 Labelme 內建基本功能 Create Rectangle，對 .png檔進行手動主動脈瓣標註。<br>
+                                將標註過程全程錄影，然後將影片上傳到 YouTube (或是直播到YouTube)。</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox2"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox2" checked></td>
           <td id='m2'>4</td>
-          <td>Medium baseline - 描述</td>
+          <td>Medium baseline - 將06_ct.nii.gz 透過3D Slicer 擴充圖片至64張。<br>
+                                使用 Labelme 內建基本功能 Create Rectangle，對 .png檔進行手動主動脈瓣標註。<br>
+                                將標註過程全程錄影，然後將影片上傳到 YouTube (或是直播到YouTube)。</td>
         </tr>
         <tr>
           <td><input type="checkbox" class="flipswitch" id="myCheckbox3"></td>
           <td id='m3'>2</td>
-          <td>Strong baseline - 描述</td>
+          <td>Strong baseline - 上傳整理完的一份 .txt 檔至 github<br>
+                                AP 分數，名列全班前20名。(1pt)<br>
+                                AP 分數，名列全班前10名。(1pt)</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox4" checked></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox4"></td>
           <td id='m4'>-10</td>
           <td>沒有寫100字心得</td>
         </tr>
@@ -193,19 +199,26 @@
     </div>
   </div>
 
-  <!-- ------------------------------------------------>
+  <!--
   <div class="row hw12 bottomrow">
     <div class="col-md-12 twenty">
       <video id="video1" style="width:100%;max-width:100%;" controls="">
-        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        <source src="https://www.youtube.com/embed/72dSy_ZLZPM" type="video/mp4">
       </video>
     </div>
   </div>
 
+  ------------------------------------------------>
+  <div class="row hw12 bottomrow">
+    <div class="col-md-12 twenty">
+      Simple 標註 0:00~7:25、Medium 標註 7:26~15:39
+      <iframe width="1310" height="737" src="https://www.youtube.com/embed/N8fZbjP-cnA" title="2025 10 31 17 52 14" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>    </div>
+  </div>
   <!-- ------------------------------------------------>
 
-  <!-- ------------------------------------------------>
+    <!-- ------------------------------------------------>
 
+  <!-- ------------------------------------------------>
 
 <script>
   $(function() {
@@ -252,3 +265,9 @@
 
 </body>
 </html>
+
+
+
+
+
+
